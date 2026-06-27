@@ -1,0 +1,115 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #405988, #2a5298); 
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .container {
+        background: white;
+        padding: 40px 35px;
+        border-radius: 25px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        width: 380px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .container:hover {
+        transform: scale(1.02);
+    }
+
+    h1 {
+        color: #04070c;
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px 18px;
+        margin: 10px 0;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        font-size: 16px;
+        outline: none;
+        transition: 0.3s;
+        background: #f8f9fa;
+    }
+
+    input:focus {
+        border-color: #2a5298;
+        background: white;
+        box-shadow: 0 0 8px rgba(42, 82, 152, 0.3);
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 15px;
+        background: linear-gradient(135deg, #297da3, #4698c7);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        letter-spacing: 1px;
+    }
+
+    button:hover {
+        background: linear-gradient(135deg, #2a5298, #1e3c72);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+
+    /* Welcome page ke liye special (thoda sa bada) */
+    .welcome-container {
+        background: white;
+        padding: 50px 40px;
+        border-radius: 25px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        width: 450px;
+    }
+
+    .welcome-container h1 {
+        font-size: 32px;
+        color: #577cc2;
+    }
+
+    .welcome-container h1 span {
+        color: #e74c3c;
+        background: #fde8e8;
+        padding: 5px 15px;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .logout-btn {
+        background: linear-gradient(135deg, #e74c3c, #c0392b);
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .logout-btn:hover {
+        background: linear-gradient(135deg, #c0392b, #e74c3c);
+    }

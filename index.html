@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <div class="welcome-container">
+        <h1>🎉 Welcome, <span id="userEmail"></span>! 🎉</h1>
+        <p style="color: #555; margin: 15px 0;">Aap successfully login ho gaye hain.</p>
+      
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="app.js"></script>
+    
+    <script>
+        
+        document.getElementById('userEmail').innerText = localStorage.getItem('Email');
+    </script>
+</body>
+</html>
